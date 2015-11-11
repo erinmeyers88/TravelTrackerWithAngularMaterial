@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Nav Bar*/
+nav {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	justify-content: center;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+}
+
+nav div {
+	width: 25%;
+	text-align: center;
+	border: 2px solid black
+}
+
+ul span {
+	width: 25%;
+	text-align: center;
+}
+
+.menu-bar {
+	width: 100%;
+}
+
+
+
+
+/*List*/
+.collapsible {
+	width: 100%;
+	height: 20px;
+	
+}
+
+
+/*Google Maps*/
+
+a {
+  text-decoration: none;
+}
+
+#form-control {
+  box-shadow: 3px 3px 10px gray;
+  padding: 5px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+#map {
+  height: 580px;
+  width: 100%;
+}
+
+#repeat {
+  display: inline;
+}
+
+#country_container {
+  width: 1000px;
+  margin: 13px 3px 3px 0px;
+  text-align: center;
+  width: 85px;
+  padding: 4px;
+  display: inline-table;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 13px;
+}
+
+#country_container:hover {
+  box-shadow: 0px 0px 10px black;
+  background-color: gray;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+#names {
+  cursor: pointer;
+}
+
+.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
+  color: white; }

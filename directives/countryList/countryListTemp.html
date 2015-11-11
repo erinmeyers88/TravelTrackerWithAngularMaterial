@@ -1,0 +1,40 @@
+<div>
+	<div ng-repeat="country in region" layout="row" layout-align="center start" layout-margin>
+		<md-toolbar flex="80" layout="row" layout-align="start center">
+			<span flex="5"></span>
+			<md-checkbox flex="10" ng-model="visited" ng-change="updateVisitedOrNot(country, visited)" ng-checked="checkCountry(country)"></md-checkbox>
+			<div layout="row" flex="90" class="clickableArea" ng-click="collapse(country.name)">
+				<i flex="20" class="material-icons">place</i>
+				<span flex="40">{{country.name}}</span>
+				<span flex="40">{{country.nativeName}}</span>
+			</div>
+		</md-toolbar>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--<div class="countryList">
+	<div ng-repeat="country in region">
+	<div class="mainCountryListing">
+		<input type="checkbox" ng-model="visited" ng-change="updateVisitedOrNot(country, visited)" ng-checked="checkCountry(country)">
+		<div class="clickableArea" ng-click="collapse(country.name)">
+		<i class="material-icons">place</i>
+		<span class="centerCountry">{{country.name}}</span>
+		<span class="">{{country.nativeName}}</span>
+		</div>
+	</div>
+	<div class="collapsibleSection" ng-show="selectedCountry === country.name">
+		<p>Subregion: {{country.subregion}}</p>
+		<p>Capital: {{country.capital}}</p>
+		<p>Population: {{country.population}}</p>
+		<p>Languages: <span ng-repeat="language in country.languages">{{language}}</span></p>
+	</div>
+</div>-->

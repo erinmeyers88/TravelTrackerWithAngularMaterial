@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="travelTracker">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Tracker</title>
+
+  <!--Angular Material CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.css">
+
+  <!--Google Material Icons Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--My own CSS-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+
+<body>
+
+  <!--<div class="menu" ui-view="menu"></div>-->
+
+  <div class="content" ui-view="content"></div>
+
+
+  <!--Imported Files-->
+
+      <!--Angular-->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+    
+      <!--Angular Materials & Dependencies-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-animate.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-aria.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.js"></script>
+    
+      <!--Angular UI Router-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    
+    
+      <!--Google Maps API-->
+      <script src="http://maps.googleapis.com/maps/api/js?&language=en"></script>
+
+
+
+  <!--My Files-->
+
+      <!--App-->
+      <script src="app.js"></script>
+    
+      <!--Routes-->
+      <script src="routes.js"></script>
+    
+      <!--Controllers-->
+      <script src="features/countryList/countryListCtrl.js"></script>
+      <script src="features/home/homeCtrl.js"></script>
+      <script src="features/map/mapCtrl.js"></script>
+      <script src="features/stats/statsCtrl.js"></script>
+    
+      <!--Directives-->
+      <script src="directives/countryList/countryListDirective.js"></script>
+      <script src="directives/menuBar/menuBarDirective.js"></script>
+    
+      <!--Services-->
+      <script src="services/countriesService.js"></script>
+
+</body>
+
+</html>
