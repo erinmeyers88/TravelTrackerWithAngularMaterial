@@ -16,11 +16,11 @@ nav {
 	align-items: center;
 }
 
-nav div {
+/*nav div {
 	width: 25%;
 	text-align: center;
 	border: 2px solid black
-}
+}*/
 
 ul span {
 	width: 25%;
@@ -50,6 +50,15 @@ md-checkbox {
   min-height: 18px;
 }
 
+
+ div:focus {
+    outline: none;
+ }
+
+.countryListContainer {
+  margin-right: 75px;
+  margin-left: 75px;
+}
 
 /*Google Maps*/
 
@@ -101,3 +110,5 @@ a {
 
 .toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
   color: white; }
+  
+  

@@ -1,16 +1,37 @@
-<div layout-margin layout-padding>
-	<div ng-repeat="country in region" layout="row" layout-align="center start" layout-margin>
-		<md-toolbar flex="80" layout="row" layout-align="start center">
+<div class="countryListContainer" layout-margin layout-padding>
+	
+	<div ng-repeat="country in region track by $index" layout="column" layout-align="center start" layout-margin>
+		<md-toolbar layout="row" layout-align="start center">
+			
 			<span flex="5"></span>
-			<md-checkbox flex="5" ng-model="visited" ng-change="updateVisitedOrNot(country, visited)" ng-checked="checkCountry(country)"></md-checkbox>
-			<span flex="5"></span>
-			<div layout="row" flex="100" class="clickableArea" ng-click="collapse(country.name)">
+			
+			<md-checkbox flex="5" class="white" aria-label="Visited" ng-model="visited" ng-change="updateVisitedOrNot(country, visited)"></md-checkbox>
+			
+			
+			
+			<div layout="row" layout-fill flex="100" class="clickableArea" ng-click="collapse(country.name)">
+				<span flex="5"></span>
 				<i flex="15" class="material-icons">place</i>
 				<span style="text-align: center" flex="40">{{country.name}}</span>
 				<span style="text-align: right" flex="25">{{country.nativeName}}</span>
 				<span flex="5"></span>
 			</div>
+			
 		</md-toolbar>
+		
+		<md-list ng-show="selectedCountry === country.name">
+			<md-list-item>Subregion: {{country.subregion}}</md-list-item>
+			<md-divider></md-divider>
+			<md-list-item>Capital: {{country.capital}}</md-list-item>
+			<md-divider></md-divider>
+			<md-list-item>Population: {{country.population}}</md-list-item>
+			<md-divider></md-divider>
+			<!--<md-list-item>Languages:<span ng-repeat="language in country.languages">{{language}}</span></md-list-item>-->
+		</md-list>
+		
+
+
+
 	</div>
 
 </div>

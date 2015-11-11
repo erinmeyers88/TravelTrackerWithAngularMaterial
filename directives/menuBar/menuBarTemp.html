@@ -1,4 +1,4 @@
-<nav>
+<!--<nav>
 	<div ui-sref="home">Home</div>
 	<div>
 		<select ng-model="selectedRegion" ng-options="region for region in regions" ng-change="onChange(selectedRegion)">
@@ -6,4 +6,25 @@
 	</div>
 	<div ui-sref="stats">Travel Stats</div>
 	<div ui-sref="map">Map</div>
+</nav>-->
+
+
+<nav>
+	<md-toolbar layout="row" flex="100" layout-align="start center">
+		<div ui-sref="home" flex="25" style="text-align: center">Home</div>
+		<div flex="25">
+			<md-input-container>
+				<label>Choose Region</label>
+				<md-select ng-model="selectedRegion" ng-change="onChange(selectedRegion)">
+					<md-option ng-value="region" ng-repeat="region in regions"  >
+						{{region}}
+					</md-option>
+				</md-select>
+			</md-input-container>
+			
+		</div>		
+		<div ui-sref="stats" flex="25" style="text-align: center">Travel Stats</div>
+		<div ui-sref="map" flex="25" style="text-align: center">Map</div>	
+	</md-toolbar>
+	
 </nav>

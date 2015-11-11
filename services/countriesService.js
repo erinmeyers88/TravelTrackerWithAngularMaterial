@@ -25,7 +25,7 @@ angular.module("travelTracker").service("countriesService", function ($http, $q)
 		
 	this.updateVisitedOrNot = function (country, visited) {
 		
-		if (visited === true) {
+		if (visited === true && this.visitedCountries.indexOf(country.name) === -1) {
 			this.visitedCountries.push(country.name);
 			this.visitedCoordinates.push(
 				{
