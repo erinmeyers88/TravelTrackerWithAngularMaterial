@@ -41,6 +41,15 @@ ul span {
 	
 }
 
+md-checkbox {
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 0;
+  line-height: 26px;
+  min-width: 18px;
+  min-height: 18px;
+}
+
 
 /*Google Maps*/
 

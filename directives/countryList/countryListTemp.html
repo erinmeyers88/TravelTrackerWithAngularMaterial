@@ -1,12 +1,14 @@
-<div>
+<div layout-margin layout-padding>
 	<div ng-repeat="country in region" layout="row" layout-align="center start" layout-margin>
 		<md-toolbar flex="80" layout="row" layout-align="start center">
 			<span flex="5"></span>
-			<md-checkbox flex="10" ng-model="visited" ng-change="updateVisitedOrNot(country, visited)" ng-checked="checkCountry(country)"></md-checkbox>
-			<div layout="row" flex="90" class="clickableArea" ng-click="collapse(country.name)">
-				<i flex="20" class="material-icons">place</i>
-				<span flex="40">{{country.name}}</span>
-				<span flex="40">{{country.nativeName}}</span>
+			<md-checkbox flex="5" ng-model="visited" ng-change="updateVisitedOrNot(country, visited)" ng-checked="checkCountry(country)"></md-checkbox>
+			<span flex="5"></span>
+			<div layout="row" flex="100" class="clickableArea" ng-click="collapse(country.name)">
+				<i flex="15" class="material-icons">place</i>
+				<span style="text-align: center" flex="40">{{country.name}}</span>
+				<span style="text-align: right" flex="25">{{country.nativeName}}</span>
+				<span flex="5"></span>
 			</div>
 		</md-toolbar>
 	</div>
