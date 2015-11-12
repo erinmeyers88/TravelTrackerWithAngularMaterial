@@ -5,6 +5,7 @@ body {
   background-image: url("globe.jpg");
   background-position: center;
   background-repeat: repeat;
+  height: auto;
 }
 
  div:focus {
