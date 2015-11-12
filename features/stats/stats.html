@@ -1,8 +1,22 @@
 <menu-bar class="menu-bar"></menu-bar>
-Countries I Have Visited:
 
-<div ng-repeat="country in visitedCountries">
-	{{country}}</div>
-
-<div>I have visited {{numberOfCountriesVisited}} of 247 countries and territories.</div>
-
+<div class="statsListContainer">
+	<div layout="column">
+	
+	<md-card>
+		<md-card-content>
+			<h2>I have visited {{numberOfCountriesVisited}} of 247 countries and territories.</h2>
+		</md-card-content>	
+	</md-card>	
+	
+	<md-card>
+		<md-card-content>
+			<h2>Places I have visited:</h2>
+			<p ng-repeat="country in visitedCountries">{{country}}</p>
+		</md-card-content>	
+	</div>
+	
+		
+</md-content>
+	
+</div>

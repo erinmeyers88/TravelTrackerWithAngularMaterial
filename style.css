@@ -1,55 +1,11 @@
 body {
   display: flex;
   flex-direction: column;
+  /*align-items: center;*/
+  background-image: url("globe.jpg");
+  background-position: center;
+  background-repeat: repeat;
 }
-
-/*Nav Bar*/
-nav {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	align-content: space-around;
-	justify-content: center;
-	height: 50px;
-	margin: 0;
-	padding: 0;
-	align-items: center;
-}
-
-/*nav div {
-	width: 25%;
-	text-align: center;
-	border: 2px solid black
-}*/
-
-ul span {
-	width: 25%;
-	text-align: center;
-}
-
-.menu-bar {
-	width: 100%;
-}
-
-
-
-
-/*List*/
-.collapsible {
-	width: 100%;
-	height: 20px;
-	
-}
-
-md-checkbox {
-  margin: 0 auto;
-  cursor: pointer;
-  padding: 0;
-  line-height: 26px;
-  min-width: 18px;
-  min-height: 18px;
-}
-
 
  div:focus {
     outline: none;
@@ -59,6 +15,13 @@ md-checkbox {
   margin-right: 75px;
   margin-left: 75px;
 }
+
+.statsListContainer {
+  margin-top: 50px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
 
 /*Google Maps*/
 
@@ -74,7 +37,7 @@ a {
 }
 
 #map {
-  height: 580px;
+  height: 600px;
   width: 100%;
 }
 
@@ -111,4 +74,28 @@ a {
 .toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
   color: white; }
   
-  
+md-select-value span {
+  color: white;
+}
+
+md-select {
+  box-shadow: 0;
+  border-style: none;
+}
+
+md-toolbar div {
+  color: white;
+}
+
+
+h1 {
+  margin-top: 200px;
+  /*color: white;*/
+  font-weight: bold;
+  text-shadow: 4px 4px white;
+}
+
+md-list {
+  background-color: white;
+  width: 100%;
+}
