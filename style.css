@@ -161,3 +161,7 @@ md-toolbar {
 .expand:focus {
 	outline:none;
 }
+
+md-toolbar div {
+	cursor: pointer;
+}
