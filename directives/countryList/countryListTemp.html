@@ -6,17 +6,15 @@
 			
 			<span flex="5"></span>
 			
-			<md-checkbox flex="5" class="white" aria-label="Visited" ng-model="visited" ng-change="updateVisitedOrNot(country, visited)"></md-checkbox>
+			<md-checkbox flex="10" class="white" aria-label="Visited" ng-model="visited" ng-change="updateVisitedOrNot(country, visited)"></md-checkbox>
 			
-			
-			
-			<!--<div layout="row" layout-fill flex="87" class="clickableArea">-->
-				<span flex="5"></span>
-				<i flex="5" style="cursor:pointer" class="material-icons" ng-click="collapse(country.name)">expand_more</i>
-				<span style="text-align: center" flex="50">{{country.name}}</span>
-				<span style="text-align: right" flex="25">{{country.nativeName}}</span>
-				<span flex="5"></span>
-			<!--</div>-->
+
+				<span flex="10"></span>
+				<span style="text-align: center" flex="45">{{country.name}} ({{country.nativeName}})</span>
+		
+				<span flex="25"></span>
+				<i flex="5" style="cursor:pointer" class="material-icons expand" ng-click="collapse(country.name)" >expand_more</i>
+	
 			
 		</md-toolbar>
 		
@@ -26,7 +24,6 @@
 			<md-list-item>Capital: {{country.capital}}</md-list-item>
 			<md-divider></md-divider>
 			<md-list-item>Population: {{country.population}}</md-list-item>
-			<!--<md-divider></md-divider>-->
 		</md-list>
 		
 
