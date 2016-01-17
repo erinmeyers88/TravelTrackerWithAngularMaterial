@@ -4,8 +4,8 @@ angular.module("travelTracker")
    $scope.visitedCoordinates = countriesService.visitedCoordinates;
    
     var mapOptions = {
-      zoom: 3,
-      center: new google.maps.LatLng(27, 0),
+      zoom: 2,
+      center: new google.maps.LatLng(-10, 10),
       mapTypeId: google.maps.MapTypeId.TERRAIN
     };
 
