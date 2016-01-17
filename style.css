@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("globe.jpg");
+  /*background-image: url("globe.jpg");*/
   background-repeat: repeat;
   height: auto;
 }
@@ -13,12 +13,43 @@ body {
 .countryListContainer {
   margin-right: 75px;
   margin-left: 75px;
+  margin-top: 0px;
+}
+
+.clickableArea {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .statsListContainer {
-  margin-top: 50px;
+  padding-top: 100px;
   margin-right: 150px;
   margin-left: 150px;
+  
+}
+
+.home {
+	width: 100%;
+	height: 800px;
+	background-image: url("map.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.statsPage {
+	background-image: url("map.jpg");
+	background-size: cover;
+  	height: 800px;
+}
+
+.countryListPage {
+	background-image: url("map.jpg");
+	background-size: cover;
+	background-size: contain;
+    background-repeat: repeat-y;
 }
 
 
@@ -88,13 +119,29 @@ md-toolbar div {
 
 
 h1 {
-  margin-top: 200px;
-  color: #1A237E;
-  font-weight: bold;
-  text-shadow: 4px 4px white;
+  	margin-top: 230px;
+ 	text-shadow: 4px 4px 15px #3f51b5;
+    color: white;
+
+}
+
+h2 {
+	color: #3f51b5;
+	/*text-shadow: .5px .5px black;*/
 }
 
 md-list {
   background-color: white;
   width: 100%;
+}
+
+
+.material-icons {
+	vertical-align: text-top;
+}
+
+.navBar {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

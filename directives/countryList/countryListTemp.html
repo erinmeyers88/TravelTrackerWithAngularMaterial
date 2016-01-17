@@ -1,3 +1,4 @@
+<div class="countryListPage">
 <div class="countryListContainer" layout-margin layout-padding>
 	
 	<div ng-repeat="country in region track by $index" layout="column" layout-align="center start" layout-margin>
@@ -9,13 +10,13 @@
 			
 			
 			
-			<div layout="row" layout-fill flex="100" class="clickableArea" ng-click="collapse(country.name)">
+			<!--<div layout="row" layout-fill flex="87" class="clickableArea">-->
 				<span flex="5"></span>
-				<i flex="15" class="material-icons">place</i>
-				<span style="text-align: center" flex="40">{{country.name}}</span>
+				<i flex="5" style="cursor:pointer" class="material-icons" ng-click="collapse(country.name)">expand_more</i>
+				<span style="text-align: center" flex="50">{{country.name}}</span>
 				<span style="text-align: right" flex="25">{{country.nativeName}}</span>
 				<span flex="5"></span>
-			</div>
+			<!--</div>-->
 			
 		</md-toolbar>
 		
@@ -34,6 +35,7 @@
 	</div>
 
 </div>
+</div>
 
 
 
@@ -41,22 +43,3 @@
 
 
 
-
-
-<!--<div class="countryList">
-	<div ng-repeat="country in region">
-	<div class="mainCountryListing">
-		<input type="checkbox" ng-model="visited" ng-change="updateVisitedOrNot(country, visited)" ng-checked="checkCountry(country)">
-		<div class="clickableArea" ng-click="collapse(country.name)">
-		<i class="material-icons">place</i>
-		<span class="centerCountry">{{country.name}}</span>
-		<span class="">{{country.nativeName}}</span>
-		</div>
-	</div>
-	<div class="collapsibleSection" ng-show="selectedCountry === country.name">
-		<p>Subregion: {{country.subregion}}</p>
-		<p>Capital: {{country.capital}}</p>
-		<p>Population: {{country.population}}</p>
-		<p>Languages: <span ng-repeat="language in country.languages">{{language}}</span></p>
-	</div>
-</div>-->

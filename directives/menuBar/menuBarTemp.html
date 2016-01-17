@@ -1,7 +1,6 @@
 <nav>
-	<md-toolbar layout="row" flex="100" layout-align="start center">
-		<div ui-sref="home" flex="25" style="text-align: center">Home</div>
-		<span layout="column" flex="25">
+	<md-toolbar layout="row" flex="100" layout-align="start center" class="navBar">
+		<span layout="column" flex="15">
 			<md-input-container>
 				<label>Choose Region</label>
 				<md-select ng-model="selectedRegion" ng-change="onChange(selectedRegion)">
@@ -12,8 +11,18 @@
 			</md-input-container>
 			
 		</span>		
-		<div ui-sref="stats" flex="25" style="text-align: center">Travel Stats</div>
-		<div ui-sref="map" flex="25" style="text-align: center">Map</div>	
+		<div ui-sref="stats" flex="15" style="text-align: center">
+			<i flex="15" class="material-icons">assessment</i>
+			Travel Stats
+		</div>
+		<div ui-sref="map" flex="10" style="text-align: center">
+			<i flex="15" class="material-icons">place</i>
+			Map
+		</div>
+		<div ui-sref="home" flex="10" style="text-align: center">
+			<i flex="15" class="material-icons">home</i>
+			Home
+		</div>	
 	</md-toolbar>
 	
 </nav>
