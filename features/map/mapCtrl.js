@@ -4,10 +4,10 @@ angular.module("travelTracker")
    $scope.visitedCoordinates = countriesService.visitedCoordinates;
    
     var mapOptions = {
-      zoom: 2,
+      zoom: 3,
       center: new google.maps.LatLng(27, 0),
       mapTypeId: google.maps.MapTypeId.TERRAIN
-    }
+    };
 
     $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
@@ -40,7 +40,7 @@ angular.module("travelTracker")
     $scope.openInfoWindow = function (e, selectedMarker) {
       e.preventDefault();
       google.maps.event.trigger(selectedMarker, 'click');
-    }
+    };
 
 
 
