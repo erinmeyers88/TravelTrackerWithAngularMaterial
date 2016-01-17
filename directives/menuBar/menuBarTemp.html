@@ -1,16 +1,13 @@
 <nav>
 	<md-toolbar layout="row" flex="100" layout-align="start center" class="navBar">
-		<span layout="column" flex="15">
 			<md-input-container>
 				<label>Choose Region</label>
-				<md-select ng-model="selectedRegion" ng-change="onChange(selectedRegion)">
+				<md-select ng-model="selectedRegion" class="layout-align-start-center navBar" ng-change="onChange(selectedRegion)">
 					<md-option ng-value="region" ng-repeat="region in regions"  >
 						{{region}}
 					</md-option>
 				</md-select>
 			</md-input-container>
-			
-		</span>		
 		<div ui-sref="stats" flex="15" style="text-align: center">
 			<i flex="15" class="material-icons">assessment</i>
 			Travel Stats

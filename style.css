@@ -144,4 +144,9 @@ md-list {
 	display: flex;
     flex-direction: row;
     justify-content: space-around;
+	height: 30px;
+}
+
+md-toolbar {
+	min-height: 40px;
 }
